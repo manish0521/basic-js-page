@@ -1,7 +1,13 @@
-window.onload = renameMe;
+window.onload = init;
 
-function renameMe() {
-    let answer = 'It works!';
+function init() {
+    document.querySelector('#input')
+        .addEventListener('keydown', handleTyping);
+}
 
+function handleTyping(event) {
+    let userInput = event.target.value;
+    let answer = 'You typed: ' + userInput;
+    
     document.querySelector('#result').innerText = answer;
 }
