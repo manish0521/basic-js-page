@@ -1,19 +1,22 @@
 window.onload = printIt;
 
 function printIt() {
-    let celsius = 10;
+    // let burgerPrice = 1;
+    // let burgerEaten = 0;
+    // let dollarsInWallet = 30;
 
-    // Calculate Fahrenheit
-    // Take celsius, multiply it by 9/5
-    // Add 32.
+    // while (burgerEaten < 10 && dollarsInWallet > 0) {
+    
+    //     burgerEaten = burgerEaten + 1;
+    //     dollarsInWallet = dollarsInWallet - burgerPrice;
+        
+    //     console.log('I am eating a burger now.');
+    //     console.log('I have eaten' + burgerEaten) ; 
+    //     console.log('left me with' + dollarsInWallet);
+        
 
-    let fahrenheit = celsius * 9 / 5 + 32;
-
-    // Answer should be in the form of:
-    // 30 degrees Celsius converts to 86 degrees Fahrenheit.
-
-    let answer = celsius + ' degrees Celsius equals ' + fahrenheit + " degrees Fahrenheit.";
-
-    // Print out fahrenheit
+    // }
+    // let answer = 'After eating like a pig ' + dollarsInWallet + 'dollars left with me.'; 
+    
     document.querySelector('.calculator').innerText = answer;
 }
