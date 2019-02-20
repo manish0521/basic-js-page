@@ -1,13 +1,19 @@
-window.onload = init;
+window.onload = printIt;
 
-function init() {
-    document.querySelector('#input')
-        .addEventListener('keydown', handleTyping);
-}
+function printIt() {
+    let celsius = 10;
 
-function handleTyping(event) {
-    let userInput = event.target.value;
-    let answer = 'You typed: ' + userInput;
-    
-    document.querySelector('#result').innerText = answer;
+    // Calculate Fahrenheit
+    // Take celsius, multiply it by 9/5
+    // Add 32.
+
+    let fahrenheit = celsius * 9 / 5 + 32;
+
+    // Answer should be in the form of:
+    // 30 degrees Celsius converts to 86 degrees Fahrenheit.
+
+    let answer = celsius + ' degrees Celsius equals ' + fahrenheit + " degrees Fahrenheit.";
+
+    // Print out fahrenheit
+    document.querySelector('.calculator').innerText = answer;
 }
